@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Catamaran", sans-serif;
+    font-size: 16px;
+}
+
+/* universal css start */
+.text-orange {
+    color: #EA512E;
+}
+
+.text-black {
+    color: #1B0238;
+}
+
+.text-silver {
+    color: #6b6b84;
+}
+
+.bg-orange {
+    background-color: #EA512E;
+}
+
+.bg-yellow {
+    background-color: #F5890D !important;
+}
+.bg-green {
+    background-color:rgb(117, 188, 9) !important;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 35px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #EA512E;
+    transition: 0.5s ease;
+    position: relative;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #F5890D;
+    color: #fff;
+
+}
+
+.mt-13 {
+    margin-top: 135px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+/* universal css end */
+
+/* banner section start */
+
+.banner {
+    width: 100%;
+    height: 700px;
+    background: url(../img/main-banner-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.shap-1 {
+    top: 3.5%;
+    left: .7%;
+    animation: move 2s linear infinite alternate;
+}
+
+.shap-2 {
+    top: 3.5%;
+    left: 50%;
+    animation: move2 2s linear infinite alternate;
+}
+
+.shap-3 {
+    top: 65%;
+    left: .7%;
+    z-index: 9;
+    animation: move3 2s linear infinite alternate;
+}
+
+.shap-4 {
+    top: 70%;
+    left: 50%;
+    z-index: 9;
+    animation: move4 2s linear infinite alternate;
+}
+.shap-5{
+    top:26%;
+    left:85%;
+    z-index: 99;
+    position: fixed;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 30px;
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.shap-6{
+    top: 92%;
+}
+
+
+.banner h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #1B0238;
+}
+
+.bg:hover {
+    background-color: #EA512E !important;
+}
+
+
+/* banner section end */
+
+@keyframes move {
+    0% {}
+
+    100% {
+        left: 3%;
+    }
+}
+
+@keyframes move2 {
+    0% {}
+    100% {}
+}
+
+@keyframes move3 {
+    0% {}
+
+    100% {
+        left: 3%;
+    }
+}
+@keyframes move4 {
+    0% {}
+
+    100% {
+        top:;
+    }
+}
+
+@keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
